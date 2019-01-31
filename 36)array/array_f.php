@@ -20,6 +20,7 @@ print_r($a1);
 //своя функция
 $time_start1=microtime(1);
 for ($i=0; $i <1000; $i++) { 
+    shuffle($a1);
     arr_top_to_bottom($a1);
 }
 $time_end1=microtime(1);
@@ -30,6 +31,7 @@ echo "Опирация заняла ".($time1=$time_end1-$time_start1)." мил�
 //sort
 $time_start2=microtime(1);
 for ($i=0; $i <1000; $i++) { 
+    shuffle($a1);
     sort($a1);
 }
 $time_end2=microtime(1);
