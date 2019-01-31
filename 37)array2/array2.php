@@ -23,7 +23,7 @@ print_r($arr1);
 natcasesort($arr1);
 print_r($arr1);
 
-echo "<br>Сортировка нескольких массивов<br><br>";
+echo "<br>Сортировка нескольких массивов 1<br><br>";
 $arr2=array("1",
             "4",
             "3",
@@ -38,8 +38,29 @@ $arr3=array("im1",
 
 print_r($arr2);
 print_r($arr3);
-array_multisort($arr2,$arr3);
+array_multisort($arr2,SORT_ASC,$arr3,SORT_DESC);
 print_r($arr2);
 print_r($arr3);
+
+echo "<br>Сортировка нескольких массивов 2<br><br>";
+echo "SORT_ASC - прямая сортировка<br>";
+echo "SORT_DESC - прямая обратная<br>";
+$arr4=array(4,
+            2,
+            2,
+            2,
+            1);
+
+$arr5=array(101,
+            102,
+            103,
+            109,
+            104);
+
+print_r($arr4);
+print_r($arr5);
+array_multisort($arr4,SORT_ASC,$arr5,SORT_DESC);
+print_r($arr4);
+print_r($arr5);
 ?>
 </pre>
