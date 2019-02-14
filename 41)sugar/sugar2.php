@@ -75,7 +75,14 @@ function speed_test1($fun1,$arg1,$fun2,$arg2,$n=10000){
 
 // echo speed_test("my_array_sum",$arr2);
 echo "<br>";
+
+
+
 print_r (speed_test1("array_sum",$arr2,"my_array_sum",$arr2));
+$arr=speed_test1("array_sum",$arr2,"my_array_sum",$arr2);
 echo "<br>";
-echo "///////////////////////////////////////////////////////////<br>";
+echo $arr['dif'];
+// echo "////////////////////////////".$arr['dif']."///////////////////////////////<br>";
 ?>
+
+
