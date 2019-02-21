@@ -53,6 +53,7 @@ function after_cenzure($str){
 
 function MarkDown($str) {
    
+<<<<<<< HEAD
     $search = array(               
         "/\*\*(.*)\*\*/iu", 
         "/\*(.*)\*/iu",          
@@ -69,6 +70,20 @@ function MarkDown($str) {
         "<h2>$1</h2>",
         "<h1>$1</h3>"
              
+=======
+    $search = array(
+        "/\*(.*)\*|\_(.*)\_/iu",  
+        "/\*{2}(.*)\*{2}|\_{2}(.*)\_{2}/iu",   
+        "/#(.*)\s/iu",  
+        "/\[img\](.*)\[\/img\]/i"    
+    );
+
+    $replace = array(
+        "<i>$1$2</i>", 
+        "<b>$1$2</b>", 
+        "<h1>$1</h1>", 
+        '<img src="$1" width=30px>',       
+>>>>>>> 95872fb5fcb7b73661fc04c225804de4d6646c0d
     );
     // $pat="/(<\s*b\s*>(.*)<\s*\/b\s*>)/i";
 
