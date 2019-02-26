@@ -1,0 +1,19 @@
+<post>
+    <msg>Привет1</msg>
+    <nik>Вася</nik>
+    <sp>Плотник</sp>
+</post>
+
+<post>
+    <msg>Привет2</msg>
+    <nik>Дима</nik>
+    <sp>Слесарь</sp>
+</post>
+
+<post>
+    <msg>Привет3</msg>
+    <nik>Данила</nik>
+    <sp>Водитель</sp>
+</post>
+
+<post><msg></msg><nik></nik><sp></sp></post>
